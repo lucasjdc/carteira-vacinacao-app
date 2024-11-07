@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo">
+
+    <TextView
+        android:id="@+id/activity_main_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carteira de vacinação"
+        android:textColor="@color/corTitulo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/corFormulario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_main_titulo">
+
+        <TextView
+            android:id="@+id/activity_main_nome_da_vacina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Vacina"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_nome_da_vacina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:hint="Nome da vacina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_nome_da_vacina" />
+
+        <TextView
+            android:id="@+id/activity_main_posto_da_vacina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Posto"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText_nome_da_vacina" />
+
+        <EditText
+            android:id="@+id/activity_main_formulario_posto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:hint="Nome do posto de saude"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_posto_da_vacina" />
+
+        <TextView
+            android:id="@+id/activity_main_text_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginTop="8dp"
+            android:text="Data"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/activity_main_formulario_posto"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_formulario_posto" />
+
+        <EditText
+            android:id="@+id/activity_main_edit_data"
+            android:layout_width="146dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:hint="Data da vacina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/activity_main_text_data"
+            app:layout_constraintTop_toBottomOf="@id/activity_main_text_data" />
+
+        <TextView
+            android:id="@+id/activity_main_text_reforco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="8dp"
+            android:text="Reforço"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_text_data"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_formulario_posto" />
+
+        <EditText
+            android:id="@+id/activity_main_edit_reforco"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:hint="Data do reforço"
+            app:layout_constraintStart_toEndOf="@+id/activity_main_edit_data"
+            app:layout_constraintTop_toBottomOf="@+id/activity_main_text_reforco" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
