@@ -58,7 +58,7 @@ class MenuActivity : Activity() {
     }
 
     private fun IrParaSaudeGestante() {
-        var gestante = Intent(this, PregmentActivity::class.java)
+        var gestante = Intent(this, GestanteActivity::class.java)
         startActivity(gestante)
     }
 }
