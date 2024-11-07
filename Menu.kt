@@ -3,12 +3,14 @@ package br.senac.card
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 
 class Menu : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.tela_de_menu)
-        bt_perfil.setOnClickListener {
+        val btPerfil = findViewById<Button>(R.id.bt_perfil)
+        btPerfil.setOnClickListener {
             IrParaPerfil()
         }
     }
