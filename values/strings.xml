@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Card</string>
+    <string name="ol_usu_rio_seja_bem_vindo_a">Olá, usuário Seja bem-vindo(a)!</string>
+    <string name="posto_de_sa_de">Posto de Saúde</string>
+    <string name="agendamentos">Agendamentos</string>
+    <string name="sa_de_gestante">Saúde Gestante</string>
+    <string name="carteira_de_vacina_o">Carteira de Vacinação</string>
+    <string name="meu_perfil">Meu Perfil</string>
+</resources>
