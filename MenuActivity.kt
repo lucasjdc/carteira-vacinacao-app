@@ -29,10 +29,10 @@ class MenuActivity : Activity() {
             IrParaPosto()
         }
 
-        val btGestante = findViewById<Button>(R.id.bt_saude_gestante)
-        btGestante.setOnClickListener {
-            IrParaSaudeGestante()
-        }
+    //    val btGestante = findViewById<Button>(R.id.bt_saude_gestante)
+    //    btGestante.setOnClickListener {
+    //        IrParaSaudeGestante()
+    //    }
     }
 
     private fun IrParaPerfil() {
@@ -57,8 +57,8 @@ class MenuActivity : Activity() {
         startActivity(posto)
     }
 
-    private fun IrParaSaudeGestante() {
-        var gestante = Intent(this, GestanteActivity::class.java)
-        startActivity(gestante)
-    }
+//    private fun IrParaSaudeGestante() {
+//        var gestante = Intent(this, GestanteActivity::class.java)
+//        startActivity(gestante)
+//    }
 }
