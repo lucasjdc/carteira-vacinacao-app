@@ -72,7 +72,7 @@ class AgendamentosActivity : Activity() {
             textViewListaDeVacinas.text = "Nenhum agendamento encontrado."
         } else {
             val listaAgendamentos = agendamentos.joinToString("\n") { agendamento ->
-                "Posto: ${agendamento.posto}, Data: ${agendamento.data}, Horário: ${agendamento.horario}, Vacina: ${agendamento.vacina}"
+                "Posto: ${agendamento.posto}, Data: ${agendamento.data}, Horário: ${agendamento.horario}, Vacina: ${agendamento.vacina} \n"
             }
             textViewListaDeVacinas.text = listaAgendamentos
         }
