@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="?android:attr/windowBackground">
+
+    <EditText
+        android:id="@+id/editNewUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editNewSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="senha"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextConfirmeSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="confirme a senha" />
+
+    <Button
+        android:id="@+id/btnCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="criar conta"
+        android:textColor="@color/white"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
