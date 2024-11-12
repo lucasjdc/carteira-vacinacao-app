@@ -59,6 +59,8 @@ public class LoginActivity extends AppCompatActivity {
 
             if (usuario.equals(savedUsuario) && senha.equals(savedSenha)) {
                 Toast.makeText(this, "Login realizado com sucesso!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                startActivity(intent);
             } else {
                 Toast.makeText(this, "Usuário ou senha incorretas", Toast.LENGTH_SHORT).show();
             }

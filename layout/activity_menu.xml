@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olá, usuário seja bem-vindo(a)!"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meu Perfil"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"/>
+
+        <Button
+            android:id="@+id/btCarteira"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carteira de Vacinação"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"/>
+
+        <Button
+            android:id="@+id/btAgendamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agendamentos"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
